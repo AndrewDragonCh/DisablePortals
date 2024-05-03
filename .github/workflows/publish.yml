@@ -18,7 +18,11 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: 17
-      - name: Publish
+      - name: Publish to Hangar
         run: ./gradlew build publishPluginPublicationToHangar --stacktrace
         env:
           HANGAR_API_TOKEN: ${{ secrets.HANGAR_API_TOKEN }}
+      - name: Publish to Modrinth
+        run: ./gradlew publishing modrinth
+        env:
+          MODRINTH_API_TOKEN: ${{ secrets.MODRINTH_API_TOKEN }}

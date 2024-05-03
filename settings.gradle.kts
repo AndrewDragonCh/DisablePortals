@@ -3,3 +3,9 @@
  */
 
 rootProject.name = "DisablePortals"
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+}
