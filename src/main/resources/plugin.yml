@@ -1,0 +1,17 @@
+name: DisablePortals
+version: '${project.version}'
+main: dev.andrewdragon.disableportals.DisablePortals
+api-version: '1.20'
+load: STARTUP
+commands:
+  toggleendportals:
+    description: Toggles End Portals
+    permission: disableportals.end
+  togglenetherportals:
+    description: Toggles Nether Portals
+    permission: disableportals.nether
+permissions:
+  disableportals.end:
+    description: Allows player to toggle End Portals
+  disableportals.nether:
+    description: Allows player to toggle Nether Portals

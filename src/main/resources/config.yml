@@ -1,0 +1,6 @@
+nether-portals:
+  enabled: true
+  disabled-message: "<red>Nether Portals have been disabled.</red>"
+end-portals:
+  enabled: true
+  disabled-message: "<red>End Portals have been disabled.</red>"
