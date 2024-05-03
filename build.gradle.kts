@@ -48,7 +48,7 @@ dependencies {
 group = "dev.andrewdragon.plugins"
 version = "0.0.1"
 description = "DisablePortals"
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+java.sourceCompatibility = JavaVersion.VERSION_17
 
 publishing {
     publications.create<MavenPublication>("maven") {
