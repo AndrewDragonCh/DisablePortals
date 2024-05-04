@@ -11,7 +11,7 @@ plugins {
 
 modrinth {
     token.set(System.getenv("MODRINTH_TOKEN")) // Remember to have the MODRINTH_TOKEN environment variable set or else this will fail - just make sure it stays private!
-    projectId.set("DisablePortals-0.0.4") // This can be the project ID or the slug. Either will work!
+    projectId.set("DisablePortals") // This can be the project ID or the slug. Either will work!
     versionType.set("Beta") // This is the default -- can also be `beta` or `alpha`
     uploadFile.set(tasks.jar) // With Loom, this MUST be set to `remapJar` instead of `jar`!
     loaders.add("paper")
