@@ -27,7 +27,6 @@ jobs:
         with:
           modrinth-id: DisablePortals
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
 
           version: 0.0.4
           version-type: beta
