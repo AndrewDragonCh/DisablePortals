@@ -12,7 +12,7 @@ plugins {
 modrinth {
     token.set(System.getenv("MODRINTH_TOKEN"))
     projectId.set("DisablePortals")
-    versionType.set("release") // `release` `beta`
+    versionType.set("Release") // `Release` `Beta`
     uploadFile.set(tasks.jar)
     loaders.add("paper")
     gameVersions.addAll("1.20", "1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6")
@@ -21,7 +21,7 @@ modrinth {
 hangarPublish {
     publications.register("plugin") {
         version.set("1.0.0")
-        channel.set("release") // `release` `beta`
+        channel.set("Release") // `Release` `Beta`
         id.set("DisablePortals")
         apiKey.set(System.getenv("HANGAR_API_TOKEN"))
         platforms {
