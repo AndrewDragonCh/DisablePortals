@@ -6,17 +6,6 @@ plugins {
     `java-library`
     `maven-publish`
     id("io.papermc.hangar-publish-plugin") version "0.1.2"
-    id("com.modrinth.minotaur") version "2.+"
-}
-
-modrinth {
-    token.set(System.getenv("MODRINTH_TOKEN")) // Remember to have the MODRINTH_TOKEN environment variable set or else this will fail - just make sure it stays private!
-    projectId.set("DisablePortals-0.0.4") // This can be the project ID or the slug. Either will work!
-    versionNumber.set("0.0.4") // You don't need to set this manually. Will fail if Modrinth has this version already
-    versionType.set("Beta") // This is the default -- can also be `beta` or `alpha`
-    uploadFile.set(tasks.jar) // With Loom, this MUST be set to `remapJar` instead of `jar`!
-    loaders.add("paper")
-    gameVersions.addAll("1.20", "1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6")
 }
 
 hangarPublish {
