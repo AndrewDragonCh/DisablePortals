@@ -1,6 +1,6 @@
 # Disable Portals
 
-A basic plugin to disable portals. Includes a command to toggle both end and nether portals.
+A basic plugin to disable portals. Includes a command to toggle both end and nether portals. This plugin is mainly for me to learn Java and also basic CI/CD and the likes
 
 ## Download
 
