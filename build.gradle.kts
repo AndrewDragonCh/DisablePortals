@@ -20,7 +20,7 @@ modrinth {
 
 hangarPublish {
     publications.register("plugin") {
-        version.set("1.0.0")
+        version.set("1.0.1")
         channel.set("Release") // `Release` `Beta`
         id.set("DisablePortals")
         apiKey.set(System.getenv("HANGAR_API_TOKEN"))
@@ -56,7 +56,7 @@ dependencies {
 }
 
 group = "dev.andrewdragon"
-version = "1.0.0"
+version = "1.0.1"
 description = "DisablePortals"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
