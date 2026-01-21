@@ -29,10 +29,10 @@ public class PlayerUseNetherPortal implements Listener {
             e.setCancelled(true);
             if (entity instanceof Player) {
                 if (netherDisabledMessage != null) {
-                    entity.sendMessage(MiniMessage.miniMessage().deserialize(netherDisabledMessage));
+                    entity.sendRichMessage(netherDisabledMessage);
                 } else {
                     plugin.getLogger().warning("Unable to read nether-portals.disabled-message.");
-                    entity.sendMessage(MiniMessage.miniMessage().deserialize("<red>Nether Portals have been disabled.</red>"));
+                    entity.sendRichMessage("<red>Nether Portals have been disabled.</red>");
                 }
             }
         }
@@ -47,10 +47,10 @@ public class PlayerUseNetherPortal implements Listener {
         if (!netherPortalsEnabled && e.getCause().equals(PlayerTeleportEvent.TeleportCause.NETHER_PORTAL)) {
             e.setCancelled(true);
             if (netherDisabledMessage != null) {
-                player.sendMessage(MiniMessage.miniMessage().deserialize(netherDisabledMessage));
+                player.sendRichMessage(netherDisabledMessage);
             } else {
                 plugin.getLogger().warning("Unable to read nether-portals.disabled-message.");
-                player.sendMessage(MiniMessage.miniMessage().deserialize("<red>Nether Portals have been disabled.</red>"));
+                player.sendRichMessage("<red>Nether Portals have been disabled.</red>");
             }
         }
     }
