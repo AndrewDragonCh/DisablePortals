@@ -2,10 +2,12 @@ package dev.andrewdragon.disableportals;
 
 import dev.andrewdragon.disableportals.listeners.*;
 import dev.andrewdragon.disableportals.commands.*;
+import org.bukkit.command.PluginCommand;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class DisablePortals extends JavaPlugin implements Listener {
+public final class DisablePortals extends JavaPlugin {
+
     @Override
     public void onEnable() {
         getLogger().info("Plugin Enabled");
@@ -15,7 +17,13 @@ public final class DisablePortals extends JavaPlugin implements Listener {
         getServer().getPluginManager().registerEvents(new PlayerUseEndPortal(this), this);
         getServer().getPluginManager().registerEvents(new PlayerUseNetherPortal(this), this);
 
-        getCommand("toggleendportals").setExecutor(new ToggleEndPortals(this));
-        getCommand("togglenetherportals").setExecutor(new ToggleNetherPortals(this));
+        final PluginCommand toggleEndPortalsCommand = getCommand("toggleendportals");
+        final PluginCommand toggleNetherPortalsCommand = getCommand("togglenetherportals");
+
+        if (toggleEndPortalsCommand != null)
+            toggleEndPortalsCommand.setExecutor(new ToggleEndPortals(this));
+
+        if (toggleNetherPortalsCommand != null)
+            toggleNetherPortalsCommand.setExecutor(new ToggleNetherPortals(this));
     }
 }
