@@ -9,6 +9,6 @@ With that, the `togglenetherportals` command will be depricated in favor of the 
 
 ## Download
 
+- [Modrinth](https://modrinth.com/plugin/disableportals) - *Prefered*
 - [Hangar](https://hangar.papermc.io/AndrewDragon/DisablePortals)
-- [Modrinth](https://modrinth.com/plugin/disableportals)
 - [GitHub](https://github.com/AndrewDragonCh/DisablePortals/releases)
