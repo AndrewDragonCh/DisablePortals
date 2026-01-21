@@ -1,15 +1,11 @@
 package dev.andrewdragon.disableportals.listeners;
 
 import dev.andrewdragon.disableportals.DisablePortals;
-import net.kyori.adventure.text.minimessage.MiniMessage;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.world.PortalCreateEvent;
 import org.bukkit.event.player.PlayerTeleportEvent;
-import org.bukkit.event.entity.EntityPortalEvent;
-import org.bukkit.PortalType;
 
 public class PlayerUseEndPortal implements Listener {
 
