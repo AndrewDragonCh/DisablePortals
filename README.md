@@ -4,8 +4,7 @@ A basic plugin to disable portals. Includes a command to toggle both end and net
 
 ## Game Rule
 
-Minecraft 1.21.9 removed the server property `allow-nether` in favor of the new game rule `allowEnteringNetherUsingPortals` - [source](https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21-9#:~:text=Removed%20server%20property%20allow%2Dnether%20in%20favor%20of%20the%20new%20game%20rule%20allowEnteringNetherUsingPortals)
-With that, the `togglenetherportals` command will be depricated in favor of the new game rule.
+Minecraft 1.21.9 removed the server property `allow-nether` in favor of the new gamerule `allowEnteringNetherUsingPortals`. This new gamerule completely disables the Nether in the same way this plugin does, making it unnecessary. With that, the `togglenetherportals` command will be depricated in favor of the new game rule whenever this plugin gets updated to support newer versions. Read more about this in the [blog post on Minecraft.net](https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21-9#:~:text=Removed%20server%20property%20allow%2Dnether%20in%20favor%20of%20the%20new%20game%20rule%20allowEnteringNetherUsingPortals)
 
 ## Download
 
